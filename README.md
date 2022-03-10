@@ -6,11 +6,15 @@ Hide all your Github's repositories with this simple script.
 
 You need Python3. Dependencies can be installed running
 
-> pip install -r requirements.txt
+```sh
+pip install -r requirements.txt
+```
 
 Also, you can use Nix and all dependencies will be available. Simply run:
 
-> nix-shell shell.nix # shell.nix can be omitted
+```sh
+nix-shell shell.nix # shell.nix can be omitted
+```
 
 To connect to Github's API you need to provide a personal access token with `repo` permissions.
 Create one [following this instructions](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
@@ -21,8 +25,14 @@ For more information [read the documentation](https://docs.github.com/es/rest/ov
 
 First, remember to load your personal access token to the env
 
-> export TOKEN=token
+```sh
+export TOKEN=token
+```
 
-Then, run `python main.py`.
+Then, run
+
+```sh
+python main.py
+```
 
 If nothings went wrong, the script will successfully exit.
